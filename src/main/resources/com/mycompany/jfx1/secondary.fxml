@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.jfx1.SecondaryController">
+   <children>
+      <Label layoutX="43.0" layoutY="27.0" text="Table View" underline="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="517.0" layoutY="347.0" mnemonicParsing="false" onAction="#handleBackAction" text="Go Back" />
+      <TableView layoutX="43.0" layoutY="74.0" prefHeight="200.0" prefWidth="493.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Order ID" />
+          <TableColumn prefWidth="75.0" text="Contractor" />
+            <TableColumn prefWidth="75.0" text="State" />
+            <TableColumn prefWidth="75.0" text="Post Code" />
+            <TableColumn prefWidth="75.0" text="Email" />
+            <TableColumn prefWidth="117.0" text="Mobile Number" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="409.0" prefWidth="644.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.jfx1.Controller">
+   <children>
+      <Label layoutX="203.0" layoutY="22.0" text="Choose Posting Services" underline="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <HBox layoutY="51.0" prefHeight="248.0" prefWidth="644.0">
+         <children>
+            <VBox prefHeight="320.0" prefWidth="211.0" spacing="10.0">
+               <children>
+                  <CheckBox fx:id="alliedExpress" mnemonicParsing="false" text="Allied Express" />
+                  <CheckBox fx:id="hunterExpress" mnemonicParsing="false" text="Hunter Express" />
+                  <CheckBox fx:id="australianExpress" mnemonicParsing="false" text="Australian Post" />
+                  <Button mnemonicParsing="false" onAction="#handleButtonAction" text="Save">
+                     <VBox.margin>
+                        <Insets top="11.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Label fx:id="label" prefHeight="17.0" prefWidth="186.0">
+                     <VBox.margin>
+                        <Insets top="13.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="332.0" prefWidth="197.0" spacing="10.0">
+               <children>
+                  <ChoiceBox fx:id="choiceBox" prefWidth="150.0" />
+                  <Button mnemonicParsing="false" onAction="#handleChoiceBox" prefHeight="25.0" prefWidth="74.0" text="Save" />
+                  <Label fx:id="choiceLabel" prefHeight="17.0" prefWidth="196.0" />
+               </children>
+            </VBox>
+            <VBox prefHeight="255.0" prefWidth="205.0" spacing="10.0">
+               <children>
+                  <ComboBox fx:id="comboBox" prefWidth="150.0" />
+                  <Button mnemonicParsing="false" onAction="#handleComboBox" prefHeight="25.0" prefWidth="71.0" text="Save" />
+                  <Label fx:id="comboLabel" prefHeight="17.0" prefWidth="183.0" />
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="9.0" left="10.0" right="4.0" top="18.0" />
+         </padding>
+      </HBox>
+      <Button layoutX="562.0" layoutY="359.0" mnemonicParsing="false" onAction="#handleNextAction" text="Next Page" />
+   </children>
+</AnchorPane>
